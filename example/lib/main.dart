@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
+import 'package:mobile_scanner_example/quiz/survey.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -297,7 +298,7 @@ class ExampleHome extends StatelessWidget {
               const SizedBox(height: 20),
               _buildItem(
                 context,
-                'Scan QR Code',
+                'Scan any QR Code',
                 'Scan any QR code.',
                 const MobileScannerSimple(),
                 Icons.qr_code_scanner,
@@ -307,7 +308,9 @@ class ExampleHome extends StatelessWidget {
                 context,
                 'Form Builder',
                 'Create a custom form.',
-                const ZebraCreateFormPage(),
+                //const ZebraCreateFormPage(),
+                //const QuizApp(),
+                const SurveyApp(),
                 Icons.edit,
               ),
               const SizedBox(height: 20),
